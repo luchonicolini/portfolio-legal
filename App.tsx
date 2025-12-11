@@ -41,11 +41,11 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col transition-colors duration-300">
       <Helmet>
-        <title>M.D.C. | Abogada & Notaria Pública</title>
-        <meta name="description" content="Portfolio profesional de María de las Mercedes Díaz Colodrero. Abogada y Notaria Pública en Mendoza y Corrientes. Especialista en Derecho Notarial, Asesoría Corporativa y Gubernamental." />
-        <meta name="keywords" content="abogada, notaria, mendoza, corrientes, legal, derecho notarial, familia, sucesiones, real estate" />
-        <meta property="og:title" content="M.D.C. | Abogada & Notaria Pública" />
-        <meta property="og:description" content="Asesoría legal y notarial de excelencia con más de 25 años de trayectoria." />
+        <title>M.D.C. | Escribana & Especialista en Docencia</title>
+        <meta name="description" content="Portfolio profesional de María de las Mercedes Díaz Colodrero. Escribana Pública y Especialista en Docencia Universitaria. Asesoría Estratégica, Coaching Profesional y Liderazgo." />
+        <meta name="keywords" content="escribana, docencia universitaria, mendoza, corrientes, don torcuato, asesoria, coaching, liderazgo, notaria" />
+        <meta property="og:title" content="M.D.C. | Escribana & Especialista en Docencia" />
+        <meta property="og:description" content="Escribana Pública y Especialista en Docencia Universitaria. Asesoría estratégica de excelencia." />
         <meta property="og:type" content="website" />
         {/* <meta property="og:image" content="/og-image.jpg" /> */}
       </Helmet>
@@ -60,14 +60,14 @@ const App: React.FC = () => {
             <span className="text-brand-gold uppercase tracking-widest text-xs font-bold mb-4 block">Sobre Mí</span>
             <h2 className="font-serif text-3xl text-brand-navy dark:text-slate-100 mb-8">Perfil Profesional</h2>
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed mb-6 text-lg">
-              Profesional con más de 25 años de trayectoria en la función fedataria (Registro Público), el asesoramiento gubernamental y la evaluación de calidad regulatoria.
-              Especializada en la dirección de grupos, la resolución de conflictos y el planeamiento estratégico.
-              Poseo gran empatía y aptitudes probadas para dirigir relaciones institucionales y públicas.
+              Escribana Pública con más de 25 años de trayectoria y Especialista en Docencia Universitaria.
+              Mi carrera se centra en la función fedataria, el asesoramiento estratégico y la formación de futuros profesionales.
+              Me apasiona el liderazgo, el manejo de grupos y el coaching de jóvenes profesionales, aportando una visión integral y humana al ámbito jurídico y académico.
             </p>
             <div className="inline-block bg-slate-50 dark:bg-slate-800 px-6 py-4 border border-slate-200 dark:border-slate-700 rounded-sm">
               <span className="font-serif text-brand-navy dark:!text-amber-300 font-bold block mb-1">Enfoque Profesional</span>
               <p className="text-sm text-slate-500 dark:text-slate-400">
-                Asesor Legal | Consejero | Bienes Inmuebles | Asesor Académico
+                Escribanía | Docencia Universitaria | Coaching & Liderazgo | Asesoría
               </p>
             </div>
           </div>

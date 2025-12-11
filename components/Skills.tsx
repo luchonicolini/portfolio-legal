@@ -5,11 +5,11 @@ import { ScrollText, Briefcase, FileSignature, Users, Landmark, Target } from 'l
 
 const skills = [
   { id: 1, title: 'Derecho Notarial', description: 'Escrituración y seguridad jurídica.', icon: ScrollText },
-  { id: 2, title: 'Asesoría Corporativa', description: 'Compliance y contratos.', icon: Briefcase },
-  { id: 3, title: 'Planificación Sucesoria', description: 'Protección de activos.', icon: FileSignature },
-  { id: 4, title: 'Docencia Universitaria', description: 'Formación académica superior.', icon: Users },
-  { id: 5, title: 'Gestión de Registros', description: 'Función fedataria pública.', icon: Landmark },
-  { id: 6, title: 'Planeamiento Estratégico', description: 'Dirección y liderazgo.', icon: Target },
+  { id: 2, title: 'Docencia Universitaria', description: 'Formación académica superior.', icon: Users },
+  { id: 3, title: 'Liderazgo & Coaching', description: 'Formación de jóvenes profesionales.', icon: Target },
+  { id: 4, title: 'Manejo de Grupos', description: 'Dinámicas y foros de equipo.', icon: Users },
+  { id: 5, title: 'Asesoría Estratégica', description: 'Consultoría integral y preventiva.', icon: Briefcase },
+  { id: 6, title: 'Gestión Fedataria', description: 'Registro público y certificaciones.', icon: Landmark },
 ];
 
 const Skills: React.FC = () => {

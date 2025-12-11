@@ -68,7 +68,7 @@ const Hero: React.FC = () => {
               variants={fadeInUp}
               className="font-sans text-lg text-slate-600 dark:text-slate-300 font-light leading-relaxed max-w-xl mx-auto lg:mx-0 transition-colors"
             >
-              Notaria Pública | Consejera Estratégica | Especialista en Asesoría Legal y Regulatoria
+              Escribana Pública | Especialista en Docencia Universitaria | Asesora Estratégica
             </motion.p>
 
             <motion.div
