@@ -74,12 +74,12 @@ const Testimonials: React.FC = () => {
                 </div>
 
                 {/* Carousel Container - Fixed Height for Stability */}
-                <div className="max-w-4xl mx-auto relative px-12 md:px-20 min-h-[300px] flex flex-col justify-between">
+                <div className="max-w-4xl mx-auto relative px-0 md:px-20 min-h-[340px] flex flex-col justify-between">
 
-                    {/* Navigation Buttons (Absolute) */}
+                    {/* Navigation Buttons (Hidden on Mobile) */}
                     <button
                         onClick={prev}
-                        className="absolute left-0 top-1/2 -translate-y-full md:-translate-x-4 p-4 text-slate-300 dark:text-slate-700 hover:text-brand-gold dark:hover:text-brand-gold transition-all duration-200 hover:scale-110 z-20 group-hover:text-slate-400"
+                        className="hidden md:block absolute left-0 top-1/2 -translate-y-full md:-translate-x-4 p-4 text-slate-300 dark:text-slate-700 hover:text-brand-gold dark:hover:text-brand-gold transition-all duration-200 hover:scale-110 z-20 group-hover:text-slate-400"
                         aria-label="Anterior testimonio"
                     >
                         <ChevronLeft size={40} strokeWidth={1.5} />
@@ -87,7 +87,7 @@ const Testimonials: React.FC = () => {
 
                     <button
                         onClick={next}
-                        className="absolute right-0 top-1/2 -translate-y-full md:translate-x-4 p-4 text-slate-300 dark:text-slate-700 hover:text-brand-gold dark:hover:text-brand-gold transition-all duration-200 hover:scale-110 z-20 group-hover:text-slate-400"
+                        className="hidden md:block absolute right-0 top-1/2 -translate-y-full md:translate-x-4 p-4 text-slate-300 dark:text-slate-700 hover:text-brand-gold dark:hover:text-brand-gold transition-all duration-200 hover:scale-110 z-20 group-hover:text-slate-400"
                         aria-label="Siguiente testimonio"
                     >
                         <ChevronRight size={40} strokeWidth={1.5} />
@@ -100,14 +100,14 @@ const Testimonials: React.FC = () => {
                                 key={item.id}
                                 className={`absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center transition-all duration-500 ease-in-out px-4
                             ${index === currentIndex
-                                        ? 'opacity-100 translate-x-0 scale-100'
+                                        ? 'opacity-100 translate-x-0 scale-100 z-10'
                                         : 'opacity-0 translate-x-8 scale-95 pointer-events-none'
                                     }
                         `}
                             >
                                 {/* Quote Text */}
-                                <blockquote className="font-serif text-xl md:text-2xl text-slate-700 dark:text-slate-200 leading-relaxed italic text-center mb-10 max-w-2xl">
-                                    {item.text}
+                                <blockquote className="font-serif text-lg md:text-2xl text-slate-700 dark:text-slate-200 leading-relaxed italic text-center mb-8 max-w-2xl">
+                                    "{item.text}"
                                 </blockquote>
 
                                 {/* Author Info */}
@@ -124,7 +124,7 @@ const Testimonials: React.FC = () => {
                     </div>
 
                     {/* Dots Controls (Bottom Fixed) */}
-                    <div className="flex justify-center gap-4 pt-6 pb-2 z-20">
+                    <div className="flex justify-center gap-4 pt-2 pb-6 z-20">
                         {testimonials.map((_, index) => (
                             <button
                                 key={index}
