@@ -15,7 +15,7 @@ const ChatWidget: React.FC = () => {
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
-  
+
   // Ref to store the chat session instance
   const chatSessionRef = useRef<Chat | null>(null);
 
@@ -32,7 +32,7 @@ const ChatWidget: React.FC = () => {
     if (isOpen && !chatSessionRef.current) {
       try {
         const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
-        
+
         const systemInstruction = `
           Eres el asistente virtual profesional de María de las Mercedes Díaz Colodrero (M.D.C.), una abogada senior y escribana con más de 25 años de trayectoria.
           
@@ -40,7 +40,7 @@ const ChatWidget: React.FC = () => {
           - María es Notaria Pública, Consejera Estratégica y Especialista en Asesoría Regulatoria.
           - Tiene experiencia como Par Evaluadora de la CONEAU, Asesora Gubernamental (Escribanía de Gobierno de Corrientes) y Docente Universitaria.
           - Servicios principales: Derecho Notarial (escrituras, contratos), Asesoría Corporativa (compliance), Planificación Sucesoria y Resolución de Conflictos.
-          - Ubicación: Trabaja en Buenos Aires, Corrientes y Mendoza.
+          - Ubicación: Su base está en Don Torcuato, Provincia de Buenos Aires, con disponibilidad para gestiones en Corrientes y Mendoza.
           
           REGLAS DE INTERACCIÓN:
           1. Mantén un tono extremadamente formal, educado y profesional (trata al usuario de "Usted").
@@ -76,9 +76,9 @@ const ChatWidget: React.FC = () => {
 
     try {
       const result = await chatSessionRef.current.sendMessageStream({ message: userMessage });
-      
+
       let fullResponse = "";
-      
+
       // Add a placeholder message for the model
       setMessages(prev => [...prev, { role: 'model', text: '' }]);
 
@@ -120,7 +120,7 @@ const ChatWidget: React.FC = () => {
       {/* Chat Window */}
       {isOpen && (
         <div className="fixed bottom-24 right-6 z-50 w-[90vw] md:w-96 h-[500px] max-h-[70vh] bg-white dark:bg-slate-900 rounded-lg shadow-2xl border border-slate-200 dark:border-slate-700 flex flex-col overflow-hidden animate-fade-in-up">
-          
+
           {/* Header */}
           <div className="bg-brand-navy p-4 flex items-center gap-3 shadow-md">
             <div className="bg-white/10 p-2 rounded-full">
@@ -144,8 +144,8 @@ const ChatWidget: React.FC = () => {
               >
                 <div
                   className={`max-w-[80%] p-3 rounded-2xl text-sm leading-relaxed shadow-sm
-                    ${msg.role === 'user' 
-                      ? 'bg-brand-navy text-white rounded-tr-none' 
+                    ${msg.role === 'user'
+                      ? 'bg-brand-navy text-white rounded-tr-none'
                       : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-100 dark:border-slate-700 rounded-tl-none'
                     }
                   `}
@@ -157,9 +157,9 @@ const ChatWidget: React.FC = () => {
             {isLoading && (
               <div className="flex justify-start">
                 <div className="bg-white dark:bg-slate-800 p-3 rounded-2xl rounded-tl-none border border-slate-100 dark:border-slate-700 flex items-center gap-2">
-                   <span className="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce [animation-delay:-0.3s]"></span>
-                   <span className="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce [animation-delay:-0.15s]"></span>
-                   <span className="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce"></span>
+                  <span className="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce [animation-delay:-0.3s]"></span>
+                  <span className="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce [animation-delay:-0.15s]"></span>
+                  <span className="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce"></span>
                 </div>
               </div>
             )}

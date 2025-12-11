@@ -87,7 +87,7 @@ const Experience: React.FC = () => {
                   {exp.organization}
                 </p>
 
-                <p className="text-slate-600 dark:text-slate-400 leading-relaxed max-w-2xl text-justify">
+                <p className="text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl text-justify">
                   {exp.description}
                 </p>
               </motion.div>

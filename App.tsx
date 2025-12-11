@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import KeyPoints from './components/KeyPoints';
@@ -8,6 +9,7 @@ import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ChatWidget from './components/ChatWidget';
+import Testimonials from './components/Testimonials';
 
 const App: React.FC = () => {
   const [darkMode, setDarkMode] = useState(() => {
@@ -38,6 +40,15 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col transition-colors duration-300">
+      <Helmet>
+        <title>M.D.C. | Abogada & Notaria Pública</title>
+        <meta name="description" content="Portfolio profesional de María de las Mercedes Díaz Colodrero. Abogada y Notaria Pública en Mendoza y Corrientes. Especialista en Derecho Notarial, Asesoría Corporativa y Gubernamental." />
+        <meta name="keywords" content="abogada, notaria, mendoza, corrientes, legal, derecho notarial, familia, sucesiones, real estate" />
+        <meta property="og:title" content="M.D.C. | Abogada & Notaria Pública" />
+        <meta property="og:description" content="Asesoría legal y notarial de excelencia con más de 25 años de trayectoria." />
+        <meta property="og:type" content="website" />
+        {/* <meta property="og:image" content="/og-image.jpg" /> */}
+      </Helmet>
       <Navbar darkMode={darkMode} toggleTheme={toggleTheme} />
       <main className="flex-grow">
         <Hero />
@@ -54,7 +65,7 @@ const App: React.FC = () => {
               Poseo gran empatía y aptitudes probadas para dirigir relaciones institucionales y públicas.
             </p>
             <div className="inline-block bg-slate-50 dark:bg-slate-800 px-6 py-4 border border-slate-200 dark:border-slate-700 rounded-sm">
-              <span className="font-serif text-brand-navy dark:text-brand-gold font-bold block mb-1">Enfoque Profesional</span>
+              <span className="font-serif text-brand-navy dark:!text-amber-300 font-bold block mb-1">Enfoque Profesional</span>
               <p className="text-sm text-slate-500 dark:text-slate-400">
                 Asesor Legal | Consejero | Bienes Inmuebles | Asesor Académico
               </p>
@@ -65,6 +76,7 @@ const App: React.FC = () => {
         <Experience />
         <Education />
         <Skills />
+        <Testimonials />
         <Contact />
 
       </main>
