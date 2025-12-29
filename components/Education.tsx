@@ -58,7 +58,7 @@ const Education: React.FC = () => {
               <div className="relative group">
                 <span className="absolute -left-[39px] top-1 w-5 h-5 rounded-full border-4 border-white dark:border-slate-900 bg-brand-gold shadow-sm transition-transform group-hover:scale-110"></span>
                 <h4 className="font-bold text-brand-navy dark:text-slate-200 text-lg leading-tight transition-colors">Especialista en Docencia Universitaria</h4>
-                <p className="text-slate-600 dark:text-slate-400 font-serif italic mt-1 transition-colors">Universidad Católica de Cuyo</p>
+                <p className="text-slate-600 dark:text-slate-400 font-serif italic mt-1 transition-colors">Universidad Nacional de Cuyo</p>
                 <p className="text-xs text-slate-400 dark:text-slate-500 mt-1 uppercase tracking-wider font-bold">Posgrado</p>
               </div>
 
@@ -107,6 +107,13 @@ const Education: React.FC = () => {
                 <div>
                   <span className="block font-bold text-brand-navy dark:text-slate-100 text-md transition-colors">Colegio de Escribanos</span>
                   <span className="text-sm text-slate-500 dark:text-slate-400 font-light transition-colors">Corrientes y Mendoza (Matrícula Profesional)</span>
+                </div>
+              </li>
+              <li className="bg-white dark:bg-slate-800 p-5 border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-all flex items-start gap-4 rounded-sm">
+                <Landmark className="w-5 h-5 text-brand-navy dark:text-slate-300 mt-1 shrink-0 opacity-80" />
+                <div>
+                  <span className="block font-bold text-brand-navy dark:text-slate-100 text-md transition-colors">Designación MERCOSUR (1996)</span>
+                  <span className="text-sm text-slate-500 dark:text-slate-400 font-light transition-colors">Representante Comisiones Técnicas (Bs. As.)</span>
                 </div>
               </li>
             </ul>

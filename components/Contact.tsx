@@ -186,8 +186,8 @@ const Contact: React.FC = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-serif text-brand-navy dark:text-slate-200 font-bold text-lg mb-1">Correo Electrónico</h4>
-                                    <a href="mailto:contacto@mdc-legal.com" className="text-slate-600 dark:text-slate-400 hover:text-brand-gold transition-colors block">
-                                        contacto@mdc-legal.com
+                                    <a href="mailto:mercecolodrero@gmail.com" className="text-slate-600 dark:text-slate-300 hover:text-brand-gold transition-colors font-medium">
+                                        mercecolodrero@gmail.com
                                     </a>
                                 </div>
                             </div>

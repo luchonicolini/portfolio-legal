@@ -28,12 +28,11 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleTheme }) => {
   }, []);
 
   return (
-    <header 
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-white/90 dark:bg-slate-900/90 backdrop-blur-md shadow-sm py-2' 
+    <header
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled
+          ? 'bg-white/90 dark:bg-slate-900/90 backdrop-blur-md shadow-sm py-2'
           : 'bg-transparent py-6'
-      }`}
+        }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Logo */}
@@ -56,9 +55,17 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleTheme }) => {
               </a>
             ))}
           </nav>
-          
+
+          {/* CTA Button */}
+          <a
+            href="#contacto"
+            className="hidden lg:flex items-center gap-2 px-5 py-2.5 border border-brand-gold text-brand-gold hover:bg-brand-gold hover:text-white transition-all duration-300 text-xs font-bold uppercase tracking-widest rounded-sm"
+          >
+            Agendar Consulta
+          </a>
+
           {/* Dark Mode Toggle (Desktop) */}
-          <button 
+          <button
             onClick={toggleTheme}
             className="p-2 rounded-full text-brand-navy dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
             aria-label="Toggle Dark Mode"
@@ -69,15 +76,15 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleTheme }) => {
 
         {/* Mobile Actions */}
         <div className="flex items-center gap-4 md:hidden">
-           <button 
+          <button
             onClick={toggleTheme}
             className="p-1 text-brand-navy dark:text-slate-100"
             aria-label="Toggle Dark Mode"
           >
             {darkMode ? <Sun size={20} /> : <Moon size={20} />}
           </button>
-          
-          <button 
+
+          <button
             className="text-brand-navy dark:text-slate-100"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >

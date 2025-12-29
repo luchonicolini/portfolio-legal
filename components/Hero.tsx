@@ -43,12 +43,12 @@ const Hero: React.FC = () => {
             initial="initial"
             animate="animate"
           >
-            <div className="space-y-2">
+            <div className="space-y-4">
               <motion.span
                 variants={fadeInUp}
                 className="text-brand-gold font-bold tracking-[0.2em] text-xs uppercase block"
               >
-                Trayectoria & Excelencia
+                Autoridad • Experiencia • Solidez
               </motion.span>
               <motion.h1
                 variants={fadeInUp}
@@ -64,11 +64,18 @@ const Hero: React.FC = () => {
               className="w-24 h-1 bg-brand-gold mx-auto lg:mx-0"
             ></motion.div>
 
+            <motion.h2
+              variants={fadeInUp}
+              className="font-sans text-xl font-medium text-brand-navy dark:text-slate-200 transition-colors"
+            >
+              Consultora Jurídica & Especialista en Gestión Académica
+            </motion.h2>
+
             <motion.p
               variants={fadeInUp}
               className="font-sans text-lg text-slate-600 dark:text-slate-300 font-light leading-relaxed max-w-xl mx-auto lg:mx-0 transition-colors"
             >
-              Escribana Pública | Especialista en Docencia Universitaria | Asesora Estratégica
+              "Más de 20 años uniendo la seguridad jurídica con la estrategia educativa y organizacional."
             </motion.p>
 
             <motion.div
@@ -105,7 +112,7 @@ const Hero: React.FC = () => {
               {/* Main Image */}
               <div className="relative aspect-[3/4] overflow-hidden bg-slate-200 dark:bg-slate-800 shadow-2xl group">
                 <img
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop"
+                  src="/mercedes-portrait.jpg"
                   alt="Retrato Profesional de María de las Mercedes Díaz Colodrero"
                   className="w-full h-full object-cover transition-transform duration-1000 transform hover:scale-105"
                 />

@@ -4,38 +4,52 @@ import { motion } from 'framer-motion';
 const experiences = [
   {
     id: 1,
-    role: "Asesor Legal - Consejera Auxiliar",
-    organization: "Escribanía de Gobierno de la Provincia de Corrientes",
-    period: "Mar 2016 - Dic 2017",
-    description: "Consejera auxiliar afectada a la Escribanía de Gobierno. Asesoramiento en gestión gubernamental, revisión de actos administrativos y soporte jurídico a la función pública provincial."
+    role: "Consultora de Gestión & Diseño Organizacional",
+    organization: "ALFAOM INFINITY SECURITY",
+    period: "2018 - Actualidad",
+    description: "Diseño organizacional, optimización de flujos y planeamiento estratégico en el sector privado. Consultoría de gestión enfocada en eficiencia y liderazgo."
   },
   {
     id: 2,
-    role: "Docente de Gestión",
-    organization: "Unidad de Enseñanza Privada (Chaco)",
-    period: "Ago 2015 - Ene 2016",
-    description: "A cargo de la coordinación docente en régimen de escuelas nocturnas. Gestión educativa y liderazgo pedagógico en entornos desafiantes."
+    role: "Par Evaluador Externo",
+    organization: "CONEAU (Comisión Nacional de Evaluación y Acreditación Universitaria)",
+    period: "2017 - Actualidad",
+    description: "Auditoría y acreditación de carreras de grado y posgrado bajo estándares nacionales. Evaluación de calidad académica institucional."
   },
   {
     id: 3,
-    role: "Docente Titular de Posgrado",
-    organization: "Universidad de la Cuenca del Plata",
-    period: "Abr 2014 - Dic 2017",
-    description: "Profesora titular de Derecho Registral en el posgrado de la carrera de Escribanía. Formación de profesionales en normativa registral y técnica notarial avanzada."
+    role: "Consejera Auxiliar - Asesoría Legal",
+    organization: "Secretaría General de la Gobernación de Corrientes (Escribanía Mayor)",
+    period: "2016 - 2017",
+    description: "Asesoría legal directa al Poder Ejecutivo. Gestión gubernamental y revisión de actos administrativos."
   },
   {
     id: 4,
-    role: "Docente Titular / Consejera Académica",
-    organization: "Universidad del Aconcagua",
-    period: "Mar 2005 - Oct 2013",
-    description: "Consejera titular e integrante de la comisión de ética. Par evaluador ante CONEAU. Docencia de grado y participación activa en la gestión institucional y calidad académica."
+    role: "Docente Titular & Asociada (20 Años)",
+    organization: "Univ. Cuenca del Plata | Univ. Aconcagua | UNNE | Univ. Católica de Cuyo",
+    period: "1997 - 2017",
+    description: "Profesora Titular de Derecho Registral y Práctica Notarial. Miembro del Consejo Superior (Univ. Aconcagua) y docente de posgrado."
   },
   {
     id: 5,
-    role: "Notario Público",
-    organization: "Profesional Independiente (Mendoza y Corrientes)",
-    period: "1994 - 2013",
-    description: "Titular del Registro Notarial N°554 (Mendoza) y posteriormente N°405 (Corrientes). Más de 15 años de ejercicio de la función pública notarial, garantizando seguridad jurídica en contratos civiles y comerciales."
+    role: "Co-Titular Cátedra Derecho Notarial",
+    organization: "Universidad Marcelino Champagnat (Mendoza)",
+    period: "2003 - 2005",
+    description: "Profesor Asociado en la cátedra de Derecho Notarial y Registral para las carreras de Abogacía y Notariado."
+  },
+  {
+    id: 6,
+    role: "Titular de Registro Notarial",
+    organization: "Poder Judicial (Mendoza y Corrientes)",
+    period: "1997 - 2013",
+    description: "Titular del Registro Notarial N° 554 (Mendoza, 2000-2013) y Registro Notarial N° 405 (Corrientes, 1997-1998)."
+  },
+  {
+    id: 7,
+    role: "Adscripta & Inicios (Poder Judicial)",
+    organization: "Registro Notarial N° 27 & Juzgado Civil N° 3",
+    period: "1994 - 1996",
+    description: "Adscripta al Registro Notarial N° 27 (Corrientes) y Pasantía en Juzgado Civil y Comercial N° 3. Inicios sólidos en la práctica jurídica."
   }
 ];
 
