@@ -90,10 +90,12 @@ const Hero: React.FC = () => {
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
               <a
-                href="#experiencia"
-                className="border border-slate-800 dark:border-slate-500 text-brand-navy dark:text-slate-300 px-10 py-4 text-sm tracking-[0.2em] uppercase hover:bg-slate-900 hover:text-white hover:border-slate-900 dark:hover:border-slate-100 dark:hover:text-white dark:hover:bg-transparent transition-all duration-300 font-medium rounded-sm"
+                href="/CV_Mercedes_Diaz_Colodrero_Consultora.pdf"
+                download="Mercedes_Diaz_Colodrero_CV.pdf"
+                className="border border-slate-800 dark:border-slate-500 text-brand-navy dark:text-slate-300 px-10 py-4 text-sm tracking-[0.2em] uppercase hover:bg-slate-900 hover:text-white hover:border-slate-900 dark:hover:border-slate-100 dark:hover:text-white dark:hover:bg-transparent transition-all duration-300 font-medium rounded-sm flex items-center gap-2"
               >
-                Ver Credenciales
+                Descargar CV
+                <ArrowRight className="w-4 h-4 -rotate-45 group-hover:rotate-0 transition-transform duration-300" />
               </a>
             </motion.div>
           </motion.div>
